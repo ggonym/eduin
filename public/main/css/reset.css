@@ -1,0 +1,25 @@
+*{margin: 0; padding: 0; box-sizing: border-box; color: #191919; font-family: 'Pretendard', sans-serif; font-size: 10px; font-weight: 400; }
+ul, ol, li { list-style: none;}
+img { display: block;}
+a { text-decoration: none; color: #191919;}
+:hover, :active, :focus  { color: #1C7EF2;}
+/* https://velog.io/@leyeon/TIL-5-%E3%86%8DCSS-%EA%B0%80%EC%83%81-%EC%84%A0%ED%83%9D%EC%9E%90-hover-focus-%E3%83%BB%E3%83%BB%E3%83%BB */
+
+
+html, body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;background-color: #fff;
+}
+
+/*ir*/
+.visually_hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  }
+  /*ir기법 https://snupi.tistory.com/109 */

@@ -1,0 +1,300 @@
+@charset"utf-8";
+
+/*=====top_banner 탑배너=====*/
+#top_banner {
+  width: 100%;
+  max-width: 1920px;
+  height: 60px;
+  background: rgb(84,232,241);
+  background: linear-gradient(90.14deg, #54E8F1 4.22%, #1C7EF2 49.29%, #62D8DF 97.26%, #62D8DF 97.26%); 
+  .top_banner_inner{
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 60px;
+      color: #fff;
+    }
+    a {
+      display: inline-block;
+      width: 146px;
+      height: 36px;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #fff;
+      line-height: 36px;
+      border-radius: 24px;   
+      padding: 0 18px; 
+      margin: 12px 0 0 24px;    
+      border: 1px solid #fff;
+      
+    }
+  }
+
+}
+
+/*=====header 헤더=====*/
+#header {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 240px; 
+  box-sizing: border-box;
+  .inner {
+    padding: 0 20px;    
+    display: flex;  
+    justify-content: space-between; 
+  }
+  .logo {
+    a {
+      line-height: 55px;
+      svg path {
+      color: #000;
+      }
+    }
+  }
+  .header_btn {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    a {
+      width: 75px;
+      height: 36px;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid #d9d9d9;
+      border-radius: 24px;
+      text-align: center;
+      line-height: 36px;
+      &:hover {
+        background-color: #1C7EF2;
+        color: #fff;
+      }
+    }
+    
+  }
+}
+/*=====header_search 검색=====*/
+#header_search{
+  width: 100%;
+  max-width: 1920px;  
+  .inner {
+    position: relative;
+    width: 967px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .header_search_form {
+    
+    color: #191919;
+    #search {
+      width: 468px;
+      height: 50px;     
+      border-radius: 50px  0  0 50px;
+      border: 1px solid #D9D9D9;
+     
+      &[type=text] {
+        // padding: 6px;
+       
+        font-size: 17px;
+        border: 1px solid #d9d9d9;      
+        color:#191919;
+        text-indent: 40px;       
+      }
+      &:hover, &:active, &:focus {
+        color: #191919(209, 49, 49);
+        border: 1px solid #d9d9d9;
+        outline: 1px solid #1C7EF2;
+      }
+      &::placeholder {
+        font-size: 18px;
+        text-indent: 40px;
+        line-height: 50px;
+        color: #8E8E8E;        
+      }      
+    }
+    .search_btn {
+      position: absolute;
+      top: 13px;
+      left: 413px;
+      background-color: transparent;
+      border: none;
+      span {
+        display: block;
+        width: 24px;
+        height: 24px;
+        line-height: 50px;
+      }
+    }    
+  }
+  .search_tag {
+    width: 500px;
+    height: 50px; 
+    border-top: 1px solid #D9D9D9;  
+    border-right:1px solid #d9d9d9 ;  
+    border-bottom: 1px solid #D9D9D9;
+    border-radius: 0  50px 50px 0;
+    ul{
+      display: flex;
+      gap: 8px;
+      padding: 0 30px;
+      box-sizing: border-box;
+      li {
+        a{
+          padding: 8px 20px;
+          box-sizing: border-box;
+          line-height: 50px;
+          font-size: 1.2rem;
+          color: #4A4A4A;          
+          border-radius: 24px;
+          
+        }
+        &:nth-child(1) a{
+          background-color: #FFEDED;
+        }
+        &:nth-of-type(2) a{
+          background-color: #FAFFE4;          
+        }
+        &:nth-of-type(3) a{
+          background-color: #EDFCFF;          
+        }
+        &:nth-of-type(4) a{
+          background-color: #F1EDFF;          
+        }
+        &:nth-of-type(5) a{
+          background-color: #FFEDED;          
+        }
+        &:nth-of-type(6) a{
+          background-color: #FAFFE4;          
+        }
+      }
+    }
+  }
+}
+/*=====header_nav 해더내비=====*/
+#header_nav {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 240px;
+  border-bottom: 1px solid #D9D9D9;
+  .header_menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    li {
+      position: relative;
+      a{
+        height: 60px;
+        font-size: 1.8rem;
+        line-height: 60px;
+        font-weight: 500;
+        &:hover:after {
+          content: '';
+          position: absolute;
+          display: block;
+          top:59px;
+          width: 100%;
+          height: 2px;
+          color: #2388F0;
+          background-color: #2388F0;
+        }  
+      }
+        
+    }
+  }
+}
+/*=====swiper_slide 스와이퍼슬라이드 Swiper - Infinite loop=====*/
+/*.swiper {
+  position: relative;
+  margin-top: 24px;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  .swiper-wrapper {
+    display: flex;
+    .swiper-slide {
+      transition-duration: 0.2s;
+    }
+  }
+  // .swiper-button-prev, .swiper-button-next {
+  //   position: absolute;
+  //   top: 40%;    
+  //   width: 64px;
+  //   height: 64px;
+  //   border-radius: 64px;
+  //   background-color: rgba($color: #000000, $alpha: 0.5);
+  //   text-align: center;
+  //   font-size: 44px;
+  // }
+  // .swiper-button-prev {
+  //   right: 0;
+    
+  // }
+  // .swiper-button-next {
+  //   left: 0;
+  // }
+} */
+
+.swiper {
+  width: 100%;
+  max-width: 1920px;
+  //height: 100%;
+  height: 300px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=====edu_policy_info 정책, 채용정보 헤드타이틀=====*/
+.article_header {
+  width: 100%;
+  max-width: 1920px;
+  padding: 80px 0 40px;
+  h2{ 
+    font-size:2.8rem;
+    font-weight: 500;
+    text-align: center;
+    color:#191919;
+  }
+  span {
+    display: block;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 12px;
+    color: #6d6d6d;
+    &:hover{
+      color: #6d6d6d;
+    }
+  }  
+}

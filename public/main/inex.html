@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduin</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="font/static/pretendard.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--스와이퍼슬라이드-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+
+
+ 
+
+
+
+
+</head>
+<body>
+  <!-----top_banner 탑배너----->
+  <div id="top_banner">
+    <div class="top_banner_inner">
+      <p>원하시는 정보를 편리하게 받아보세요 👀</p>
+      <a href="">구독신청하기  > </a>
+    </div>
+  </div>
+  <!-----header 해더----->
+  <div id="header">
+    <div class="inner">
+      <div class="logo">
+        <h1 class="visually_hidden">에듀인</h1>
+        <a href="" >
+          <svg width="67" height="21" viewBox="0 0 67 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.592 6.44V9.848H10.088V13.016H4.592V16.712H10.808V20H0.488V3.152H10.808V6.44H4.592ZM12.6564 13.28C12.6564 11.904 12.9124 10.696 13.4244 9.656C13.9524 8.616 14.6644 7.816 15.5604 7.256C16.4564 6.696 17.4564 6.416 18.5604 6.416C19.4404 6.416 20.2404 6.6 20.9604 6.968C21.6964 7.336 22.2724 7.832 22.6884 8.456V2.24H26.7924V20H22.6884V18.08C22.3044 18.72 21.7524 19.232 21.0324 19.616C20.3284 20 19.5044 20.192 18.5604 20.192C17.4564 20.192 16.4564 19.912 15.5604 19.352C14.6644 18.776 13.9524 17.968 13.4244 16.928C12.9124 15.872 12.6564 14.656 12.6564 13.28ZM22.6884 13.304C22.6884 12.28 22.4004 11.472 21.8244 10.88C21.2644 10.288 20.5764 9.992 19.7604 9.992C18.9444 9.992 18.2484 10.288 17.6724 10.88C17.1124 11.456 16.8324 12.256 16.8324 13.28C16.8324 14.304 17.1124 15.12 17.6724 15.728C18.2484 16.32 18.9444 16.616 19.7604 16.616C20.5764 16.616 21.2644 16.32 21.8244 15.728C22.4004 15.136 22.6884 14.328 22.6884 13.304ZM42.9854 6.608V20H38.8814V18.176C38.4654 18.768 37.8974 19.248 37.1774 19.616C36.4734 19.968 35.6894 20.144 34.8254 20.144C33.8014 20.144 32.8974 19.92 32.1134 19.472C31.3294 19.008 30.7214 18.344 30.2894 17.48C29.8574 16.616 29.6414 15.6 29.6414 14.432V6.608H33.7214V13.88C33.7214 14.776 33.9534 15.472 34.4174 15.968C34.8814 16.464 35.5054 16.712 36.2894 16.712C37.0894 16.712 37.7214 16.464 38.1854 15.968C38.6494 15.472 38.8814 14.776 38.8814 13.88V6.608H42.9854Z" fill="#090909"/>
+            <path d="M47.9973 5.216C47.2773 5.216 46.6853 5.008 46.2213 4.592C45.7733 4.16 45.5493 3.632 45.5493 3.008C45.5493 2.368 45.7733 1.84 46.2213 1.424C46.6853 0.991999 47.2773 0.775999 47.9973 0.775999C48.7013 0.775999 49.2773 0.991999 49.7253 1.424C50.1893 1.84 50.4213 2.368 50.4213 3.008C50.4213 3.632 50.1893 4.16 49.7253 4.592C49.2773 5.008 48.7013 5.216 47.9973 5.216ZM50.0373 6.608V20H45.9333V6.608H50.0373ZM61.1714 6.464C62.7394 6.464 63.9874 6.976 64.9154 8C65.8594 9.008 66.3314 10.4 66.3314 12.176V20H62.2514V12.728C62.2514 11.832 62.0194 11.136 61.5554 10.64C61.0914 10.144 60.4674 9.896 59.6834 9.896C58.8994 9.896 58.2754 10.144 57.8114 10.64C57.3474 11.136 57.1154 11.832 57.1154 12.728V20H53.0114V6.608H57.1154V8.384C57.5314 7.792 58.0914 7.328 58.7954 6.992C59.4994 6.64 60.2914 6.464 61.1714 6.464Z" fill="#090909"/>
+          </svg>            
+        </a>
+      </div>
+      <div class="header_btn">
+        <a href="/">로그인</a>
+        <a href="/">회원가입</a>
+      </div>
+    </div>
+  </div>
+  <!-----header_search 검색----->
+  <div id="header_search">
+    <div class="inner">
+      <form action="/" class="header_search_form">
+          <input type="text" placeholder="찾고 싶은 검색어를 입력해주세요" name="search" id="search">
+          <button type="submit" class="search_btn">
+            <span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.76 13.27L20.49 19L19 20.49L13.27 14.76C12.2 15.53 10.91 16 9.5 16C5.91 16 3 13.09 3 9.5C3 5.91 5.91 3 9.5 3C13.09 3 16 5.91 16 9.5C16 10.91 15.53 12.2 14.76 13.27ZM9.5 5C7.01 5 5 7.01 5 9.5C5 11.99 7.01 14 9.5 14C11.99 14 14 11.99 14 9.5C14 7.01 11.99 5 9.5 5Z" fill="#1F1F1F"/>
+                </svg>                
+            </span>
+          </button>         
+      </form>
+      <div class="search_tag">
+        <ul>
+          <li><a href="/">교육</a></li>
+          <li><a href="/">행사</a></li>
+          <li><a href="/">강의</a></li>
+          <li><a href="/">자격증</a></li>
+          <li><a href="/">자격증</a></li>
+          <li><a href="/">자격증</a></li>
+        </ul>
+      </div>      
+    </div>
+  </div>
+  <!-----header_nav 내비게이션----->
+  <div id="header_nav">
+    <div class="inner">
+      <ul class="header_menu">
+        <li><a href="">정책</a></li>
+        <li><a href="">정보</a></li>
+        <li><a href="">행사및전시</a></li>
+        <li><a href="">무료교육</a></li>
+        <li><a href="">공고등록</a></li>
+        <li><a href="">동아리</a></li>
+        <li><a href="">에듀스타트</a></li>
+      </ul>
+    </div>
+  </div>
+
+<!-----slide_banner 내비게이션슬라이드배너----->
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="image/banner-01.png" alt=""></div>
+    <div class="swiper-slide"><img src="image/banner-02.png" alt=""></div>
+    <div class="swiper-slide"><img src="image/banner-03.png" alt=""></div>       
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+ 
+
+ <!-----edu_policy_info 정책----->
+ <div class="edu_policy_info ">
+  <div class="inner">
+    <div class="edu_policy_info_tit article_header">
+      <h2>정책</h2>
+      <span>현재 최신 정책을 알아보세요.</span>
+    </div>
+    <div class="edu_policy_article">
+      <div class="edu_policy_article_desc">
+        <div class="edu_policy_article_name">
+          <ul>
+            <li></li>
+            <li>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="edu_policy_article_tag">
+            <ul>
+              <li><a href="">#정책</a></li>
+              <li><a href="">#교육</a></li>
+              <li><a href="">#교육부</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="edu_policy_article_desc">
+        
+      </div>
+    </div>
+  </div>
+ </div>
+
+<!--슬라이드
+ <script>
+  //이미지 변수 i지정
+  //이미지는 3번 돈다
+  /*const slideList = document.querySelector('.swiper-slide');
+  const slidebtnPrev= document.querySelector('.swiper-button-prev')
+  const slidebtnNext= document.querySelector('.swiper-button-next')
+  
+  function slide() {
+    let i = 0;
+    for (let i=0; i<=3; i++) { //변수 선언, 처리, 조건
+      slideList.style.marginLeft="-100%";//왼쪽으로
+      i = i+1;
+    }
+    
+  }
+    
+  slidebtnPrev.addEventListener("click",function(){
+    style.marginLeft="-100%"
+  })
+ 
+*/
+  
+ </script>
+ -->
+
+
+    <!-- Swiper JS -->
+   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+</body>
+</html>
